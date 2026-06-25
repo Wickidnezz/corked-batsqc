@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corked Bats | Batting Cages in Walcott, IA</title>
+  <meta name="description" content="Corked Bats is a baseball and softball batting cage facility in Walcott, Iowa. Book cage time, train hard, and get access instructions by email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <img src="assets/logo.png" alt="Corked Bats logo" />
+      <span>Corked Bats</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+    <nav class="nav">
+      <a href="#booking">Book</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-red"></div>
+      <div class="hero-glow hero-glow-white"></div>
+
+      <div class="hero-content">
+        <img class="hero-logo" src="assets/logo.png" alt="Corked Bats batting cages logo" />
+        <p class="eyebrow">Walcott, Iowa Batting Cages</p>
+        <h1>Step in. Lock in. Take your cuts.</h1>
+        <p class="hero-copy">
+          Private baseball and softball cage time with simple online booking, email confirmations,
+          and access instructions sent before your session.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#booking">Book a Cage</a>
+          <a class="btn btn-secondary" href="#contact">Ask a Question</a>
+        </div>
+
+        <div class="quick-info">
+          <div>
+            <strong>1 Hour</strong>
+            <span>Booking Slots</span>
+          </div>
+          <div>
+            <strong>Code Access</strong>
+            <span>Simple Entry</span>
+          </div>
+          <div>
+            <strong>Baseball + Softball</strong>
+            <span>Train Your Way</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Reservations</p>
+          <h2>Book cage time in 1-hour blocks.</h2>
+          <p>
+            This starter booking request form is ready for Netlify. Later, we can replace it with a live booking system
+            like Square, Acuity, or a custom scheduler with payments and automatic door-code messaging.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <span>01</span>
+              <div>
+                <h3>Pick a time</h3>
+                <p>Customers request the date and hour they want.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <div>
+                <h3>Get confirmation</h3>
+                <p>They receive booking details and facility rules by email.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <div>
+                <h3>Access the facility</h3>
+                <p>Entry instructions can include a code-based access process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="card-form" name="booking" method="POST" data-netlify="true" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="booking" />
+          <h3>Booking Request</h3>
+
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="(563) 000-0000" />
+          </label>
+
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+
+            <label>
+              Time
+              <select name="time" required>
+                <option value="">Choose a time</option>
+                <option>8:00 AM</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Baseball, softball, team rental, questions, etc."></textarea>
+          </label>
+
+          <button class="btn btn-primary full" type="submit">Send Booking Request</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section dark-strip" id="pricing">
+      <div class="container">
+        <p class="eyebrow center">Simple Pricing</p>
+        <h2 class="center">Starter pricing cards</h2>
+        <p class="section-intro">
+          These are placeholders until the real business pricing is finalized.
+        </p>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Single Session</h3>
+            <div class="price">$40<span>/hour</span></div>
+            <p>Great for individual hitters and quick tune-ups.</p>
+            <a href="#booking" class="card-link">Book this</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="badge">Popular</div>
+            <h3>Team Rental</h3>
+            <div class="price">$90<span>/hour</span></div>
+            <p>Designed for coaches, teams, and small groups.</p>
+            <a href="#booking" class="card-link">Request time</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Monthly Pass</h3>
+            <div class="price">TBD</div>
+            <p>Perfect for players who want consistent reps.</p>
+            <a href="#contact" class="card-link">Ask about it</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container two-col">
+        <div class="photo-card">
+          <div class="cage-illustration">
+            <div class="light light-one"></div>
+            <div class="light light-two"></div>
+            <div class="plate"></div>
+            <div class="net-lines"></div>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow">About Corked Bats</p>
+          <h2>A place to get more swings without the hassle.</h2>
+          <p>
+            Corked Bats is built for players who want convenient cage time, cleaner scheduling,
+            and a straightforward way to train. Whether it is a quick solo session, a lesson,
+            or team reps, the goal is simple: more swings, better timing, and a better experience.
+          </p>
+          <ul class="check-list">
+            <li>Baseball and softball friendly</li>
+            <li>Private 1-hour cage sessions</li>
+            <li>Email confirmation and facility instructions</li>
+            <li>Located in Walcott, Iowa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Questions before you book?</h2>
+          <p>Reach out and we’ll get back to you.</p>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:info@corkedbatsqc.com">info@corkedbatsqc.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+15634841059">(563) 484-1059</a></p>
+            <p><strong>Location:</strong> 8431 200th St, Walcott, IA, United States</p>
+          </div>
+        </div>
+
+        <form class="card-form" name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact" />
+          <h3>Contact Form</h3>
+
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button class="btn btn-primary full" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Corked Bats</strong>
+      <span>Batting Cages • Walcott, IA</span>
+    </div>
+    <p>© <span id="year"></span> Corked Bats. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
